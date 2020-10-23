@@ -16,8 +16,10 @@ public class Review {
     String reviewDate = "";
     List<String> reviewTags = new ArrayList<String>();
 
-    public Review(Long ID, String title, String content) {
-        
+    public Review(Long id, String title, String reviewContent) {
+        this.id = id;
+        this.title = title;
+        this.reviewContent = reviewContent;
     }
 
     public Review(Long id, String title, String imageUrl, String reviewCategory, String reviewContent, String reviewDate, List<String> reviewTags) {
@@ -49,10 +51,6 @@ public class Review {
 
     public String getReviewContent() {
         return reviewContent;
-    }
-
-    public String getReviewType() {
-        return reviewType;
     }
 
     public String getReviewDate() {

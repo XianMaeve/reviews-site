@@ -33,6 +33,11 @@ public class ReviewRepository {
         reviewList.put(damon.getId(), damon);
     }
 
+    public ReviewRepository(Review first, Review second) {
+        reviewList.put(first.getId(), first);
+        reviewList.put(second.getId(), second);
+    }
+
     public Review getOne(long id) {
         return reviewList.get(id);
     }
